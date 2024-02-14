@@ -55,18 +55,14 @@ body {
 }
 
 
-/* @media screen and (min-width: 768px) {
-    .underlining {
-        position: relative;
-        color: #404bbf;
-    }
-} */
-
 /*Шапка сайта.Навігація*/
 ul {
     list-style: none;
     padding-left: 0;
     margin: 0 auto;
+}
+a {
+    text-decoration: none;
 }
 
 .link {
@@ -144,10 +140,14 @@ h1, h2, h3, h4, h5, h6 {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-item {
+/* .header-item {
     position: relative;
     color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+.header-item {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -173,6 +173,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #404bbf;
 } */
 
+.underlining{
+    display: none;
+}
 .underlining::after {
     display: none;
 }
@@ -241,12 +244,12 @@ h1, h2, h3, h4, h5, h6 {
 .address-link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-address {
+/* .header-address {
     font-style: normal;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-/* 
+
 .header-address {
     display: none;
 }
@@ -278,10 +281,6 @@ h1, h2, h3, h4, h5, h6 {
         letter-spacing: 0.02em;
     }
 }
-
- */
-
-
 
 
 .header-addres {
@@ -343,6 +342,51 @@ padding-bottom: 120px;
     background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .page-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url("../images/people-hero-mob-2x.jpg");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .page-hero {
+        padding: 112px 0;
+        max-width: 1157px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url("../images/people-hero-tab-1x.jpg");
+    }
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .page-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url("../images/people-hero-tab-2x.jpg");
+    }
+}
+}
+
+@media screen and (min-width: 1158px) {
+    .page-hero {
+        padding: 188px 0;
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url("../images/people-office1.jpg");
+    }
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .page-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+        url("../images/people-office-2x.jpg");
+    }
+}
+}
+
 .hero-subject {
     font-size: 56px;   
     font-weight: 700;
@@ -354,6 +398,21 @@ padding-bottom: 120px;
     margin: 0 auto;
     margin-bottom: 48px;
     max-width: 496px;
+}
+@media screen and (min-width: 768px) {
+    .hero-subject {
+        width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-subject {
+        margin-bottom: 48px;
+    }
 }
 
 .hero {
@@ -394,6 +453,8 @@ padding-bottom: 120px;
     line-height: 1.5;
     letter-spacing: 0.02em;margin: 0;
 }
+
+/* peculiarities */
 
 .feature-ithem {
     width: calc((100% - 72px) / 4);
