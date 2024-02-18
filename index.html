@@ -42,18 +42,18 @@
         </div>
 
         <!-- menu burger -->
-        <div class="menu-mobile is-open">
+        <div class="menu-mobile">
 
-            <div class="menu-burger">
+            <div class="container container-burger">
                 <button class="btn-close" type="button">
                     <svg class="close" width="8" height="8">
                         <use href="./images/icons.svg#icon-close.svg"></use>
                     </svg>
                 </button>
-                <nav>
+                <nav class="nav-burger">
                     <ul class="list-menu-burger">
                         <li class="item-menu-burger">
-                            <a class="link-nav-burger" href="./index.html">Studio</a>
+                            <a class="link-nav-burger current" href="./index.html">Studio</a>
                         </li>
                         <li class="item-menu-burger">
                             <a class="link-nav-burger" href="">Portfolio</a>
@@ -66,44 +66,44 @@
                 <address class="address-burger">
                     <ul class="list-contacts-burger">
                         <li>
-                            <a class="link-address-burger" href="mailto:info@devstudio.com">info@devstudio.com
-                            </a>
+                            <a class="link-address-burger current" href="tel:+110001111111">+11 (000) 111-11-11</a>
                         </li>
                         <li>
-                            <a class="link-address-burger" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                        </li>
-                    </ul>
-                    <ul class="list-social-icons menu-soc-burger">
-                        <li class="item-social-icons">
-                            <a class="social-link" href="http://www.instagram.com">
-                                <svg class="social-icon" width="24" height="24">
-                                    <use href="./images/icons.svg#icon-instagram.svg"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="item-social-icons">
-                            <a class="social-link" href="http://www.twitter.com">
-                                <svg class="social-icon" width="24" height="24">
-                                    <use href="./images/icons.svg#icon-twitter.svg"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="item-social-icons">
-                            <a class="social-link" href="http://www.facebook.com">
-                                <svg class="social-icon" width="24" height="24">
-                                    <use href="./images/icons.svg#icon-facebook.svg"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="item-social-icons">
-                            <a class="social-link" href="http://www.linkedin.com">
-                                <svg class="social-icon" width="24" height="24">
-                                    <use href="./images/icons.svg#icon-linkedin.svg"></use>
-                                </svg>
+                            <a class="link-address-burger" href="mailto:info@devstudio.com">info@devstudio.com
                             </a>
                         </li>
                     </ul>
                 </address>
+                <ul class="list-social-icons menu-soc-burger">
+                    <li class="item-social-icons">
+                        <a class="social-link" href="http://www.instagram.com">
+                            <svg class="social-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item-social-icons">
+                        <a class="social-link" href="http://www.twitter.com">
+                            <svg class="social-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item-social-icons">
+                        <a class="social-link" href="http://www.facebook.com">
+                            <svg class="social-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item-social-icons">
+                        <a class="social-link" href="http://www.linkedin.com">
+                            <svg class="social-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -495,7 +495,7 @@
 
     <!-- Modal window -->
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
         <div class="modal">
             <button class="btn-close" type="button">
                 <svg class="close" width="8" height="8">
@@ -546,8 +546,9 @@
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the
-                        <a class="modal-link" href="">Privacy Policy</a>
+                        <span class="">I accept the terms and conditions of the
+                        <a class="modal-link" href="">Privacy Policy</a></span>
+                        
                     </label>
                 </div>
                 
