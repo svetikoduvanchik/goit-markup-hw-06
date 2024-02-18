@@ -107,9 +107,9 @@ a {
     }
 }
 
-.underlining {
+/* .underlining {
     display: none;
-}
+} */
 
 .underlining::after {
     display: none;
@@ -205,6 +205,9 @@ a {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+ p {
+    margin: 0;
+ }
 
 /* .header-navigetion {
     display: flex;
@@ -234,13 +237,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.header-item {
+/* .header-item {
     display: none;
-}
+} */
 
 @media screen and (min-width: 768px) {
     .header-item {
-        display: flex;
+        display: block;
     }
 }
 
@@ -410,7 +413,7 @@ padding-bottom: 120px;
 
 .container {
     margin: 0 auto;
-    width: 320px;
+    max-width: 320px;
     padding: 0 15px;
 }
 
@@ -472,6 +475,12 @@ padding-bottom: 120px;
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     padding: 24px 24px 40px 16px;
+    /* height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff; */
 }
 .btn-close {
     background-color: transparent;
@@ -489,6 +498,7 @@ padding-bottom: 120px;
 } */
 
 .menu-burger {
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -507,6 +517,7 @@ padding-bottom: 120px;
     gap: 40px;
     margin-bottom: 168px;
     margin-top: 72px;
+    padding-left: 16px;
 }
 
 .link-nav-burger {
@@ -549,6 +560,7 @@ padding-bottom: 120px;
     flex-direction: column;
     gap: 24px;
     margin-bottom: 48px;
+    padding-left: 16px;
 }
 
 .link-address-burger {
@@ -937,6 +949,8 @@ screen and (min-resolution: 2dppx) {
     letter-spacing: 0.02em;
     line-height: 1.5;
     font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 @media screen and (min-width: 1158px) {
     .feature-text {
@@ -948,7 +962,7 @@ screen and (min-resolution: 2dppx) {
 
 .team {
     background-color: #F4F4FD;
-    padding: 96px 12px;
+    padding: 96px 0px;
  }
 
  @media screen and (min-width: 768px) {
@@ -1299,6 +1313,13 @@ transform: translateY(0%);
 .footer {
     background-color: #2e2f42;
     padding: 96px 0;
+
+}
+@media screen and (min-width: 768px) {
+    .footer {
+        padding-left: 92px;
+        padding-right: 92px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1329,10 +1350,16 @@ transform: translateY(0%);
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
-        margin-left: 108px;
+        /* margin-left: 108px; */
         justify-content: start;
+        /* max-width: 584px; */
+        /* margin: 0 0 0 108px; */
+        max-width: 768px;
+        margin: 0 auto;
+        text-align: left;
     }
 }
+
 
 @media screen and (min-width: 1158px) {
     .footer-container {
